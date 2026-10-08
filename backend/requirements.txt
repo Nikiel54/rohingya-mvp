@@ -1,0 +1,9 @@
+fastapi
+uvicorn[standard]
+python-multipart
+faster-whisper
+rapidfuzz
+google-genai
+python-dotenv
+pydantic
+requests

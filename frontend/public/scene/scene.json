@@ -1,0 +1,143 @@
+{
+  "id": "first-shift",
+  "title": "First Shift",
+  "repeatRequest": {
+    "id": "repeat_request",
+    "text": "Can you repeat that, please?",
+    "accepted": [
+      "can you repeat that please",
+      "can you say that again",
+      "repeat please",
+      "sorry can you repeat that"
+    ]
+  },
+  "turns": [
+    {
+      "id": "t1",
+      "line": { "id": "t1_line", "text": "Good morning! Welcome to your first day." },
+      "point": {
+        "options": [
+          { "id": "wave_hello", "label": "wave hello" },
+          { "id": "sleeping", "label": "sleeping" },
+          { "id": "eating", "label": "eating" }
+        ],
+        "correct": "wave_hello"
+      },
+      "say": {
+        "intent": "Greets the supervisor back.",
+        "keyWords": [],
+        "replies": [
+          { "id": "t1_r0", "text": "Good morning. Thank you." },
+          { "id": "t1_r1", "text": "Hello." },
+          { "id": "t1_r2", "text": "Good morning." },
+          { "id": "t1_r3", "text": "Thank you." }
+        ]
+      }
+    },
+    {
+      "id": "t2",
+      "line": { "id": "t2_line", "text": "Please put on your gloves." },
+      "point": {
+        "options": [
+          { "id": "gloves", "label": "gloves" },
+          { "id": "hat", "label": "hat" },
+          { "id": "boots", "label": "boots" }
+        ],
+        "correct": "gloves"
+      },
+      "say": {
+        "intent": "The learner agrees to put on the gloves.",
+        "keyWords": ["gloves"],
+        "replies": [
+          { "id": "t2_r0", "text": "Okay, I will put on my gloves." },
+          { "id": "t2_r1", "text": "Okay." },
+          { "id": "t2_r2", "text": "Yes, I will put them on." }
+        ]
+      }
+    },
+    {
+      "id": "t3",
+      "line": { "id": "t3_line", "text": "Put the boxes on the shelf." },
+      "point": {
+        "options": [
+          { "id": "boxes_shelf", "label": "boxes on shelf" },
+          { "id": "boxes_floor", "label": "boxes on floor" },
+          { "id": "boxes_truck", "label": "boxes on truck" }
+        ],
+        "correct": "boxes_shelf"
+      },
+      "say": {
+        "intent": "Agrees to put the boxes on the shelf.",
+        "keyWords": ["shelf"],
+        "replies": [
+          { "id": "t3_r0", "text": "Okay, I will put the boxes on the shelf." },
+          { "id": "t3_r1", "text": "Okay." },
+          { "id": "t3_r2", "text": "Yes, on the shelf." }
+        ]
+      }
+    },
+    {
+      "id": "t4",
+      "line": { "id": "t4_line", "text": "Your break is at twelve o'clock." },
+      "point": {
+        "options": [
+          { "id": "clock_12", "label": "12:00" },
+          { "id": "clock_3", "label": "3:00" },
+          { "id": "clock_8", "label": "8:00" }
+        ],
+        "correct": "clock_12"
+      },
+      "say": {
+        "intent": "Acknowledges the break time.",
+        "keyWords": ["twelve"],
+        "replies": [
+          { "id": "t4_r0", "text": "Okay. My break is at twelve." },
+          { "id": "t4_r1", "text": "Okay." },
+          { "id": "t4_r2", "text": "Twelve o'clock, thank you." }
+        ]
+      }
+    },
+    {
+      "id": "t5",
+      "line": { "id": "t5_line", "text": "Wash your hands before you eat." },
+      "point": {
+        "options": [
+          { "id": "wash_hands", "label": "wash hands" },
+          { "id": "shower", "label": "shower" },
+          { "id": "laundry", "label": "laundry" }
+        ],
+        "correct": "wash_hands"
+      },
+      "say": {
+        "intent": "Agrees to wash hands before eating.",
+        "keyWords": ["wash", "hands"],
+        "replies": [
+          { "id": "t5_r0", "text": "Okay, I will wash my hands." },
+          { "id": "t5_r1", "text": "Okay." },
+          { "id": "t5_r2", "text": "Yes, I will." }
+        ]
+      }
+    },
+    {
+      "id": "t6",
+      "line": { "id": "t6_line", "text": "Do you have any questions?" },
+      "point": {
+        "options": [
+          { "id": "raise_hand", "label": "raise hand" },
+          { "id": "sleeping", "label": "sleeping" },
+          { "id": "eating", "label": "eating" }
+        ],
+        "correct": "raise_hand"
+      },
+      "say": {
+        "intent": "Answers whether they have a question; asking one is also a pass.",
+        "keyWords": [],
+        "replies": [
+          { "id": "t6_r0", "text": "Yes. Where is the bathroom?" },
+          { "id": "t6_r1", "text": "No, thank you." },
+          { "id": "t6_r2", "text": "Where is the bathroom?" }
+        ]
+      }
+    }
+  ]
+}
